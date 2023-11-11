@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5 - CSS</title>
+    <link rel="stylesheet" href="./styles/Actividad5.css">
+</head>
+
+<body>
+    <main>
+        <h1>CSS</h1>
+        <section id="padding">
+            <header class="headerSection">
+                <h2><a href="https://developer.mozilla.org/es/docs/Web/CSS/padding">Propiedad padding</a></h2>
+            </header>
+            <p class="sectionContent">
+                La propiedad CSS <span class="remarcableWord">padding</span> se utiliza para definir el espacio entre el
+                contenido de un elemento y su borde. Esta, acepta uno, dos, tres o cuatro valores, que definen el
+                espacio en los cuatro lados del elemento (superior, derecho, inferior e izquierdo) en ese orden.
+            </p>
+            <pre>
+                <code class="cssExample">
+/* Aplicando un valor único a todos los lados */
+div {
+    padding: 10px;
+}
+
+/* Aplicando dos valores para arriba/abajo y derecha/izquierda */
+p {
+    padding: 15px 10px;
+}
+
+/* Aplicando tres valores para arriba, derecha/izquierda y abajo */
+ul {
+    padding: 10px 5px 20px;
+}
+
+/* Aplicando valores para todos los lados */
+a {
+    padding: 5px 10px 15px 20px;
+}   
+                </code>
+            </pre>
+        </section>
+        <section id="margin">
+            <header class="headerSection">
+                <h2><a href="https://developer.mozilla.org/es/docs/Web/CSS/margin">Propiedad margin</a></h2>
+            </header>
+            <p class="sectionContent">
+                La propiedad CSS <span class="remarcableWord">margin</span> se utiliza para definir el espacio entre los
+                bordes exteriores de un elemento y los elementos circundantes (otros elementos HTML, como divs,
+                párrafos, imágenes, etc.). En esencia, el margen controla la separación entre un elemento y los
+                elementos que lo rodean.
+                <br>
+                La propiedad <span class="remarcableWord">margin</span> también acepta uno, dos, tres o cuatro valores,
+                y su funcionamiento es similar al de la propiedad <span class="remarcableWord">padding</span>, pero en
+                lugar de crear espacio alrededor del contenido de un elemento, crea espacio alrededor del elemento en
+                sí.
+            </p>
+            <pre>
+                <code class="cssExample">
+/* Aplicando un valor único a todos los lados */
+div {
+    margin: 20px;
+}
+
+/* Aplicando dos valores para arriba/abajo y derecha/izquierda */
+p {
+    margin: 10px 30px;
+}
+
+/* Aplicando tres valores para arriba, derecha/izquierda y abajo */
+ul {
+    margin: 5px 15px 10px;
+}
+
+/* Aplicando valores para todos los lados */
+a {
+    margin: 5px 10px 15px 20px;
+}
+                </code>
+            </pre>
+        </section>
+        <section id="border">
+            <header class="headerSection">
+                <h2><a href="https://developer.mozilla.org/es/docs/Web/CSS/border">Propiedad border</a></h2>
+            </header>
+            <p class="sectionContent">
+                La propiedad CSS <span class="remarcableWord">border</span> se utiliza para definir los bordes alrededor
+                de los elementos HTML. Estos son útiles para darle un aspecto más visual a los elementos, separarlos de
+                otros elementos o para resaltarlos de alguna manera. La propiedad <span
+                    class="remarcableWord">border</span> tiene varias subpropiedades que se utilizan para
+                personalizar los bordes. Estas subpropiedades son:
+            <ul>
+                <li>
+                    border-width: Define el ancho del borde. Puedes establecer valores en píxeles, em, rem o
+                    porcentajes.
+                </li>
+                <li>
+                    border-style: Define el estilo del borde, como sólido, punteado, discontinuo, doble, entre otros.
+                </li>
+                <li>
+                    border-color: Establece el color del borde. Puede ser un valor de color en formato hexadecimal,
+                    nombre del color o RGB.
+                </li>
+            </ul>
+            </p>
+            <pre>
+                <code class="cssExample">
+elemento {
+    border: 2px solid #0077b6;
+}
+                </code>
+            </pre>
+        </section>
+
+    </main>
+</body>
+
+</html>

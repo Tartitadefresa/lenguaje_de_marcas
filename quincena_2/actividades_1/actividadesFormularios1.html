@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Formulario 1</title>   
+        <meta name="author" content="Natalia Cantó Soriano">
+        <meta charset="utf-8">
+        <style>
+            form {
+                padding: 20px 10px;
+                border: 1px solid black;
+                width: fit-content;
+            }
+
+            form > div {
+                margin: 5px;
+            }
+        </style>
+    </head>
+        
+    <body>
+        <main>
+            <form action="" method="get">
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input id="nombre" type="text" name="nombre" maxlength="50"></input>
+                </div>
+                <div>
+                    <label for="apellido">Apellido: </label>
+                    <input id="apellido" type="text" name="apellido" maxlength="50"></input>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" required></input>
+                </div>
+                <div>
+                    <input id="Varón" type="radio" name="sexo">    
+                    <label for="Varón">Varón</label>
+                </div>
+                <div>
+                    <input id="Mujer" type="radio" name="sexo">
+                    <label for="Mujer">Mujer</label>
+                </div>
+                <button type="submit">Enviar</button> 
+                <button>Restablecer</button>
+        </main>
+    </body>
+</html>

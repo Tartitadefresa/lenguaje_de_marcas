@@ -1,0 +1,29 @@
+.titulo {
+    background-color: cadetblue;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.barra_navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 0px 5px;
+}
+
+.barra_navegacion a {
+    margin-left: 8rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.barra_navegacion a:hover {
+    background-color: grey;
+}

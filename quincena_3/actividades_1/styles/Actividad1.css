@@ -1,0 +1,86 @@
+
+/* Todos los elementos de la pagina */
+* {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Primer elemento <h1> de <main>*/
+h1:first-child {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(to right, #7b68eb 0%, #CF1512 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Los elementos <em> contenidos en el elemento con id=primerParrafo */
+#primerParrafo em {
+    color: #ffffff;
+    background-color: #7b68eb;
+}
+
+/*Primera letra del elemento con id=primerParrafo*/
+#primerParrafo:first-letter {
+    color: #7b68eb;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/*Todos los elementos de tipo listado no ordenado (<ul>) con clase=listadoSinBullet*/
+ul.listadoSinBullet {
+    list-style: none;
+}
+
+/*Todos los elementos <span> que se encuentren dentro de un <li> con class=elementoPar de una unordered list (<ul>)*/
+ul li.elementoPar span {
+    color: red;
+}
+
+/*Todos los elementos <span> que se encuentren dentro de un <li> con class=elementoImpar de una unordered list (<ul>)*/
+ul li.elementoImpar span {
+    color: rgb(204, 154, 30)
+}
+
+/*Pseudoelemento before de un <span> con class=emojiPaint que se encuentre en el interior de un <li> */
+li span.emojiPaint::before {
+    content: " 🎨 ";
+}
+
+/*Pseudoelemento before de un <span> con class=emojiSeparacion que se encuentre en el interior de un <li> */
+li span.emojiSeparacion::before {
+    content: " 💔 ";
+}
+
+/*Pseudoelemento before de un <span> con class=emojiReciclaje que se encuentre en el interior de un <li> */
+li span.emojiReciclaje::before {
+    content: " 🚮 ";
+}
+
+/*Pseudoelemento before de un <span> con class=emojiOjo que se encuentre en el interior de un <li> */
+li span.emojiOjo::before {
+    content: " 👀 ";
+}
+
+/*Pseudoelemento before de un <span> con class=emojiTelf que se encuentre en el interior de un <li> */
+li span.emojiTelf::before {
+    content: " 📞 ";
+}
+
+/*Elementos <strong> que se encuentren dentro de un list element (<li>) de una unordered list (<ul>)*/
+ul li strong {
+    font-weight: bold;
+    color: #7b68eb;
+}
+
+/*Párrafo con class="textoCentrado"*/
+p.textoCentrado {
+    text-align: center;
+}
+
+/*Primer elemento <cite> dentro del párrafo con clase=ultimoParrafo*/
+p.ultimoParrafo cite:first-child {
+    text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+
+.trophy::after {
+    content: "🏆";
+}
+
+.trophy::before {
+    content: "🏆";
+}
+
+.medal::before {
+    content: "🎖️";
+}
+
+ol strong {
+    text-decoration: underline;
+    font-weight: bold;
+    color: cadetblue;
+}

@@ -1,0 +1,57 @@
+table {
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+td, th {
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+th.DiaDeLaSemana {
+    background-color:#808080 ;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+th.Hora {
+    background-color: #80808080;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.HorasDelDia {
+    background-color: #9e9896;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.DAW {
+    background-color: aquamarine;
+}
+
+.DWS {
+    background-color: brown;
+}
+
+.EIE {
+    background-color: chartreuse;
+}
+
+.DWC {
+    background-color: cornflowerblue;
+}
+
+.DIW {
+    background-color: blueviolet;
+}
+
+.Tutoria {
+    background-color: antiquewhite;
+}
+
+.DWC2 {
+    background-color: deepskyblue;
+}

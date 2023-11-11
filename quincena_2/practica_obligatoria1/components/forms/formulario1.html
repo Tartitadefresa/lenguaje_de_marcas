@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Formulario 1</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Natalia Cantó Soriano">
+        <style>
+            form > div {
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="../../index.html">Volver a la página principal</a>
+            </nav>
+        </header>
+        <main>
+            <form action="" method="get">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="50" required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="50" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>   
+                <div> 
+                    <input type="radio" id="Hombre" name="sexo" id="Hombre">
+                    <label for="sexo">Hombre</label>
+                </div>
+                <div>
+                    <input type="radio" id="Mujer" name="sexo" id="Mujer">
+                    <label for="sexo">Mujer</label>
+                </div>     
+            
+                <fieldset>
+                    <legend>Conformidad</legend>
+                    <input type="checkbox" checked="checked">Deseo recibir información sobre novedades y ofertas
+                    <div>
+                        <input type="checkbox">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+    </body>
+</html>

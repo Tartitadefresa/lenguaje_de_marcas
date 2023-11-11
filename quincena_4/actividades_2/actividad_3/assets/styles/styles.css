@@ -1,0 +1,26 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
+.titulo_galeria {
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #D3CAE9;
+    border-radius: 5px;
+    border: 1px;
+    border-color: #EFE9F2;
+    padding: 5px;
+}
+
+img {
+    max-width: 200px;
+}

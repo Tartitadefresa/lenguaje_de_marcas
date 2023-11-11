@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Natalia Cantó Soriano">
+        <title>Formulario 2</title>
+    </head>
+    <body>
+        <main>
+            <form action="/destino.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombre" maxlength="50">
+
+                <label for="apellidos">Apellidos:</label>
+                <input id="apellidos" type="text" name="apellidos" maxlength="50">
+
+                <fieldset>
+                    <legend>Conocimientos de idiomas</legend>
+                    <input id="ingles" type="checkbox" name="ingles">
+                    <label for="ingles">Inglés</label>
+                    <div>
+                        <input id="aleman" type="checkbox" name="aleman">
+                        <label for="aleman">Alemán</label>
+                    </div>
+                    <div>
+                        <input id="frances" type="checkbox" name="frances">
+                        <label for="frances">Francés</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Indique sus preferencias para asistir a clase</legend>
+                    <select multiple>
+                        <option value="option1">Mañana</option>
+                        <option value="option2">Tarde</option>
+                    </select>
+                    <div>
+                        <label for="fecha">Elija una fecha de inicio:</label>
+                        <input id="fecha" type="date" name="fecha">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+
+    </body>
+
+</html>

@@ -1,0 +1,53 @@
+input,
+select  {
+    width: 100%; /*Ancho del input para que ocupe el 100% del espacio*/
+    padding: 14px 20px; /*Añadiremos un padding para separar el contenido del borde*/
+    margin: 8px 0; /*Añadiremos un margin superior e inferior de 8px*/
+    border-radius: 4px; /*Haremos que el borde sea redondeado*/
+    cursor: pointer; /*Modificaremos el puntero del ratón para que cuando pasemos por encima se transforme en una mano*/
+}
+
+input[type="submit"] {
+    background-color: #297ac7; /*El color será azulado*/
+    color: white; /*El texto se mostrará en blanco*/
+    order: none; /*Ocultaremos el borde*/
+}
+
+input[type="submit"]:hover {
+    background-color: #4083c2; /*Modificamos el color de fondo*/
+}
+
+input[type="text"],
+select {
+    display: inline-block;  /*Modificamos el display para que sea una mezcla entre inline y block*/
+    border: 1px solid #ccc; /*Modificamos el color del borde y su ancho*/
+    box-sizing: border-box; /*Establecemos el sistema de medida a border-box*/
+}
+
+input[type="text"]:focus,
+select:focus {
+    background-color: #99bfe2; /*Modificamos el color de fondo*/
+    color: white; /*Establecemos el color de letra a blanco*/
+    outline: none; /*Ocultamos el borde del input*/
+}
+
+input::placeholder {
+    color: #297ac7; /*Modificamos el color de la fuente*/
+}
+
+form {
+    border-radius: 5px; /*Haremos que el borde sea redondeado*/
+    background-color: #f2f2f2; /*Modificamos el color de fondo*/
+    padding: 20px; /*Establecemos un padding en las 4 zonas*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*Modificamos la fuente*/
+}
+
+
+
+
+
+
+
+
+
+

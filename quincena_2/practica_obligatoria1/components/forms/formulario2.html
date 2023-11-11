@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario 2</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Natalia Cantó Soriano">
+        <style>
+            fieldset {
+                margin: 20px 0;
+                padding: 10px;
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <form action="/destino.php" method="post">
+                <fieldset>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div>
+                        <label for="ciclo">Ciclo</label>
+                        <select name="ciclo" id="ciclo">
+                            <option value="dam">DAM</option>
+                            <option value="daw">DAW</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comentarios"></label>
+                        <textarea name="comentarios" id="comentarios" rows="8" cols="60" placeholder="Comentarios adicionales..."></textarea>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="archivo">Incluir mi CV</label>
+                    <input type="file" id="arquivo" name="archivo">
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
