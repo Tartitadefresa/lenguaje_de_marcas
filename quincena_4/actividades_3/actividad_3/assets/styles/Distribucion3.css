@@ -1,0 +1,45 @@
+.contenedor {
+  display: grid;
+  grid-template-areas: 
+  ". item_1 item_1 item_1 "
+  "item_2 item_3 item_3 item_3"
+  "item_4 item_4 item_4 item_4";
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 2px
+
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  color: white;
+  padding: 40px 0;
+}
+
+.item_1 {
+  grid-area: item_1;
+}
+
+.item_2 {
+  grid-area: item_2;
+}
+
+.item_3 {
+  grid-area: item_3;
+}
+
+.item_4 {
+  grid-area: item_4;
+}
+
+.item_5 {
+  grid-area: item_5;
+  display: none;
+}
+
+.item_6 {
+  grid-area: item_6;
+  display: none;
+}

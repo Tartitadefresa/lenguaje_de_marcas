@@ -1,22 +1,25 @@
 main {
-    background-color: tan;
-    color: black;
     display: grid;
     grid-template-areas: "a b c";
     grid-auto-columns: minmax(0, 1fr);
 }
   
-@media (400px <=width <=800px) {
+@media (max-width: 800px) {
     main {
-        background-color: blue;
-        color: white;
-        
-        grid-template-areas: 
+        grid-template-areas:
         "a b"
-        "a c";
+        ". c";
     }
 }
-  
+
+@media (max-width: 400px) {
+    main {
+        grid-template-areas:
+        "a"
+        "b"
+        "c";
+    }
+}
 
 
 
