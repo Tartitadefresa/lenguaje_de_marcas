@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+@import "./theme_switch.css";
+@import "./contacto.css";
+@import "./sobre_mi.css";
+
+:root {
+    --primary-color: #ff289a;
+    --bgColor: #FFF;
+    --bgColorSecondary: #dedede;
+    --textColor: #000;
+    --bgTableTitle: #faf1f2;
+    --bgapartadosTabla: #dcb2d9;
+    --borderColor: #cccccc;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --bgColor: #212121;
+    --bgColorSecondary: #313131;
+    --textColor: #FFF;
+    --bgTableTitle: #2e042e;
+    --bgapartadosTabla: #432041;
+    --borderColor: rgb(70, 70, 70);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--textColor);
+    background-color: var(--bgColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 1.2rem;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    background-color: var(--bgColor);
+    border-bottom: 1px solid var(--borderColor);
+}
+
+main {
+    margin: 2rem 10rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    font-size: 1.3rem;
+} 
+
+nav ul li {
+    list-style: none;  
+}
+
+nav ul li a {
+    text-decoration: none;
+    border: none;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+    color: var(--textColor);
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+    animation-name: rotate;
+}
+
+footer {
+    background-color: black;
+    padding: 17px;
+    color:white;
+    text-align: center;
+}
+
+#dark-mode-toggle {
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+

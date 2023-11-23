@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Natalia Cantó | Portfolio</title>
+    <meta name="author" content="Natalia Canto Soriano">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+
+<body>
+    <header style="display: flex; align-items: center;">
+        <div class="tdnn">
+            <div class="moon">
+            </div>
+        </div>
+        <nav style="flex: 1;">
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobre_mi">Sobre mi</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1>¡Hola! Soy Natalia Cantó Soriano​</h1>
+            <p>Alumna de 1 DAW IES Estació Ontinyent📚</p>
+        </section>
+        <section class="sobreMiSection" id="sobre_mi">
+            <img src="./assets/images/experiencia-programacion-persona-que-trabaja-codigos-computadora-scaled.jpg"
+                alt="imagen_cv" class="sobreMiImg"> <br>
+
+            <table>
+                <caption>
+                    <h2>Acerca de mi</h2>
+                </caption>
+                <tr>
+                    <th class="tituloTabla" colspan="5">Curriculum Vitae</th>
+                </tr>
+                <tr>
+                    <th class="apartadosTabla">Sobre mi</th>
+                    <td>Hola, soy Natalia Cantó, una joven chica que estudia creación de aplicaciones web. Soy una chica
+                        que
+                        disfruta de todo lo que hace, con muchas ganas de aprender y superarme a mi misma dia a dia.
+                    </td>
+                </tr>
+                <tr>
+                    <th class="apartadosTabla">Experiencia laboral</th>
+                    <td>Un año trabajando en <em>Salustar Laboratorios</em> como operaria y jefa de máquina</td>
+                </tr>
+                <th class="apartadosTabla">Formación Académica</th>
+                <td><strong>Título de Educación Secundaria Obligatoria</strong> - IES Estació 2019<br>
+                    <strong>Título de Bachillerato de Ciencias Sociales</strong> - IES Estació 2021
+                </td>
+                <tr>
+                    <th class="apartadosTabla">Aptitudes</th>
+                    <td>
+                        <ul>
+                            <li> Capacidad resolutiva</li>
+                            <li> Trabajo en equipo</li>
+                            <li> Gestión del tiempo</li>
+                            <li> Aprendizaje rápido</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="contacto" class="sectionContacto">
+            <div>
+                <h2>Contacto</h2>
+                <form class="contenedorFormulario" action="envío.php" method="post">
+                    <label for="nombre">Nombre</label><br>
+                    <input class="formInput" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
+                        maxlength="30" required><br>
+
+                    <label for="apellidos">Apellidos</label><br>
+                    <input class="formInput" type="text" id="apellidos" name="apellidos"
+                        placeholder="Escribe tus apellidos" maxlength="30" required><br>
+
+                    <label for="correo">Correo Electrónico</label><br>
+                    <input class="formInput" type="email" id="correo" name="correo" placeholder="tucorreo@example.com"
+                        maxlength="30" required><br>
+
+                    <label for="telefono">Teléfono</label><br>
+                    <input class="formInput" type="tel" id="telefono" name="telefono"
+                        placeholder="Escribe tu teléfono"><br>
+
+                    <label for="pais">País</label>
+                    <input class="formInput" list="paises" id="pais" name="pais">
+
+                    <datalist id="paises">
+                        <option value="España">
+                        <option value="Estados Unidos">
+                        <option value="Francia">
+                        <option value="México">
+                        <option value="China">
+                    </datalist><br>
+
+                    <label for="comentarios">Comentarios</label><br>
+                    <textarea name="comentarios" id="comentarios" rows="4"
+                        cols="40">Escribe tus comentarios aquí...</textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="contenedorRRSS" style="display: flex; align-items: center; gap: 15px">
+                    <a href="https://instagram.com/nataaliacanto">
+                        <img style="width: 40px;" src="./assets/images/instagram-icon.svg">
+                    </a>
+                    <a href="https://facebook.com/natalia.canto.315">
+                        <img style="width: 33px;" src="./assets/images/facebook-icon.svg">
+                    </a>
+                    <a href="https://twitter.com/canto_soriano">
+                        <img style="width: 40px;" src="./assets/images/twitter-icon.svg">
+                    </a>
+                </div>
+            </div>
+
+
+            <iframe style="justify-self: end;" width="600" height="450" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-74.043,40.7,-73.907,40.8&layer=mapnik"></iframe><br>
+        </section>
+    </main>
+    <footer>Página creada por Natalia Cantó</footer>
+
+    <script src="./assets/scripts/modoOscuro.js"></script>
+</body>
+
+</html>
