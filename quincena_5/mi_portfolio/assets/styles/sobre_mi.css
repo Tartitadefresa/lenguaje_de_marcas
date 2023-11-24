@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 
 caption {
-    font-weight: bolder;
+    font-weight: bolder; /*negrita al texto*/
     font-family: 'Indie Flower', cursive;
     font-size: 20px;
 }
@@ -13,9 +13,9 @@ td {
 
 table, th,td { 
     border: 1px solid currentColor;
-    border-collapse: collapse;
+    border-collapse: collapse; /*los bordes de las celdas de la tabla deben colapsar en un solo borde cuando son adyacentes*/
     padding: 10px;
-    height: 2px;
+    height: 2px; /*altura de 2 píxeles*/
 }
 
 .tituloTabla {
@@ -47,18 +47,18 @@ tr td ul {
 }
 
 .sobreMiImg {
-    max-width: 600px;
-    border-radius: 15px;
+    max-width: 600px; /*establecer la anchura máxima de un elemento*/
+    border-radius: 15px; /*establecer el radio de las esquinas de un elemento*/
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1500px) { /*se aplica cuando la ventana del navegador tiene un ancho máximo de 1500 píxeles*/
     .sobreMiSection {
-        flex-direction: column;
+        flex-direction: column; /* los elementos hijos se apilarán verticalmente en lugar de horizontalmente*/
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 650px) { /*se aplica cuando la ventana del navegador tiene un ancho máximo de 650 píxeles*/
     .sobreMiImg {
-        display: none;
+        display: none; /*oculta completamente los elementos que tienen esta clase cuando la ventana del navegador tiene un ancho máximo de 650 píxeles*/
     }
 }

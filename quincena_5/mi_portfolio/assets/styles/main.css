@@ -1,74 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
 @import "./theme_switch.css";
 @import "./contacto.css";
-@import "./sobre_mi.css";
+@import "./sobre_mi.css"; /*para importar estilos desde archivos externos*/
 
-:root {
-    --primary-color: #ff289a;
-    --bgColor: #FFF;
-    --bgColorSecondary: #dedede;
-    --textColor: #000;
-    --bgTableTitle: #faf1f2;
-    --bgapartadosTabla: #dcb2d9;
-    --borderColor: #cccccc;
+:root { /* para almacenar valores que se pueden reutilizar en todo el código*/
+    --primary-color: #ff289a; /* para definir el color principal de la página*/
+    --bgColor: #FFF; /* para definir el color de fondo principal de la página*/
+    --bgColorSecondary: #dedede; /*para definir un segundo color de fondo en la página*/
+    --textColor: #000; /*para definir el color del texto principal en la página*/
+    --bgTableTitle: #faf1f2; /*para definir el color de fondo de los títulos de tablas*/
+    --bgapartadosTabla: #dcb2d9; /*para definir el color de fondo de ciertas secciones o apartados de tablas*/
+    --borderColor: #cccccc; /*para definir el color de los bordes en varios elementos*/
 }
 
-[data-theme="dark"] {
-    --primary-color: #9A97F3;
-    --bgColor: #212121;
-    --bgColorSecondary: #313131;
-    --textColor: #FFF;
-    --bgTableTitle: #2e042e;
-    --bgapartadosTabla: #432041;
-    --borderColor: rgb(70, 70, 70);
+[data-theme="dark"] { /* para cambiar las variables CSS personalizadas cuando el atributo data-theme tiene el valor "dark"*/
+    --primary-color: #9A97F3; /* Cambia el color principal (--primary-color) a un tono de púrpura cuando el tema es oscuro*/
+    --bgColor: #212121; /*Cambia el color de fondo principal (--bgColor) a un tono oscuro.*/
+    --bgColorSecondary: #313131; /*Cambia el color de fondo secundario (--bgColorSecondary) a otro tono oscuro*/
+    --textColor: #FFF; /*Cambia el color del texto principal (--textColor) a blanco en un tema oscuro.*/
+    --bgTableTitle: #2e042e; /* Cambia el color de fondo de los títulos de tablas (--bgTableTitle) a un tono oscuro y púrpura*/
+    --bgapartadosTabla: #432041; /* Cambia el color de fondo de ciertas secciones o apartados de tablas (--bgapartadosTabla) a otro tono oscuro y púrpura.*/
+    --borderColor: rgb(70, 70, 70); /*Cambia el color del borde (--borderColor) a un tono oscuro utilizando valores RGB.*/
 }
 
-* {
-    margin: 0;
-    padding: 0;
+* { /* Este selector se aplica a todos los elementos en la página*/
+    margin: 0; /*Establece el margen de todos los elementos en la página a cero*/
+    padding: 0; /*Establece el relleno de todos los elementos en la página a cero*/
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--textColor);
-    background-color: var(--bgColor);
+body { /*se aplican al elemento body*/
+    font-family: 'Montserrat', sans-serif; /*Establece la familia de fuentes del texto dentro del cuerpo (body) de la página*/
+    color: var(--textColor); /*Define el color del texto en el cuerpo de la página*/
+    background-color: var(--bgColor); /*Establece el color de fondo del cuerpo de la página */
 }
 
-a {
-    text-decoration: none;
+a { /*se aplica a todos los elementos <a> (enlaces) de la página*/
+    text-decoration: none; /*se elimina la decoración de texto predeterminada de los enlaces*/
 }
 
 header {
-    padding: 1.2rem;
-    user-select: none;
-    position: sticky;
-    top: 0;
-    background-color: var(--bgColor);
-    border-bottom: 1px solid var(--borderColor);
+    padding: 1.2rem; /*Establece un relleno de 1.2 rem*/
+    user-select: none; /*Desactiva la capacidad de seleccionar texto*/
+    position: sticky; /* el encabezado se comportará como "fijo" hasta que alcance un cierto punto durante el desplazamiento de la página*/
+    top: 0; /*se pegará en la parte superior del área de visualización de la página*/
+    background-color: var(--bgColor); /*Establece el color de fondo del elemento*/
+    border-bottom: 1px solid var(--borderColor); /*Agrega un borde inferior de 1 píxel al elemento utilizando el color definido*/
 }
 
 main {
-    margin: 2rem 10rem;
+    margin: 2rem 10rem; /*El valor 2rem establece el margen superior e inferior en 2 unidades de la medida rem*/
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2rem;
-    font-size: 1.3rem;
+    display: flex; /*Establece el modelo de diseño de la lista desordenada como un contenedor flexible*/
+    align-items: center; /* Centra verticalmente los elementos de la lista en el contenedor flexible*/
+    justify-content: flex-end; /*Coloca los elementos de la lista al final del contenedor flexible, en el extremo derecho*/
+    gap: 2rem; /*Establece un espacio de 2 unidades de medida entre los elementos de la lista*/
+    font-size: 1.3rem; /*Establece el tamaño de fuente de los elementos de la lista en 1.3 unidades de medida*/
 } 
 
 nav ul li {
-    list-style: none;  
+    list-style: none;  /*elimina los marcadores de lista predeterminados*/
 }
 
 nav ul li a {
-    text-decoration: none;
-    border: none;
-    transition: color 0.2s ease-in-out;
-    cursor: pointer;
-    color: var(--textColor);
+    text-decoration: none; /*Elimina la decoración de subrayado predeterminada de los enlaces*/
+    border: none; /*Elimina cualquier borde predeterminado alrededor de los enlaces*/
+    transition: color 0.2s ease-in-out; /* Agrega una transición suave al cambio de color del texto (color). La transición tomará 0.2 segundos y seguirá una función de temporización suave para crear un cambio gradual*/
+    cursor: pointer; /*Cambia el cursor del ratón cuando se sitúa sobre el enlace a una mano */
+    color: var(--textColor); /*Establece el color del texto de los enlaces*/
 }
 
 nav ul li a:hover {
@@ -83,7 +83,7 @@ h1 {
 h2 {
     font-family: 'Indie Flower', cursive;
     font-size: 2.5rem;
-    animation-name: rotate;
+    animation-name: rotate; /*para especificar el nombre de la animación que se aplicará a el h2*/
 }
 
 footer {

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!--para especificar el idioma natural de nuestra página-->
 
 <head>
-    <title>Natalia Cantó | Portfolio</title>
-    <meta name="author" content="Natalia Canto Soriano">
-    <meta charset="utf-8">
+    <title>Natalia Cantó | Portfolio</title> <!--el titulo que le ponemos a nuestra página web-->
+    <meta name="author" content="Natalia Canto Soriano"> <!--el autor soy yo-->
+    <meta charset="utf-8"> <!--definimos el formato estándar-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/main.css"> <!--relacionamos el css-->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 </head>
 
 <body>
     <header style="display: flex; align-items: center;">
+        <!--creamos el header para poner nuestra barra de busqueda y la opcion de cambiar el modo a oscuro-->
         <div class="tdnn">
             <div class="moon">
             </div>
         </div>
-        <nav style="flex: 1;">
-            <ul>
+        <nav style="flex: 1;"> <!--nav para proporcionar nuestros enlaces de navegación-->
+            <ul> <!--creamos una lista no ordenada-->
                 <li>
-                    <a href="#inicio">Inicio</a>
+                    <a href="#inicio">Inicio</a> <!--creamos nuestro enlace interno-->
                 </li>
                 <li>
                     <a href="#sobre_mi">Sobre mi</a>
@@ -31,21 +32,22 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="inicio">
-            <h1>¡Hola! Soy Natalia Cantó Soriano​</h1>
+    <main> <!--para representar el contenido principal del body-->
+        <section id="inicio"> <!--hacemos un section para Inicio -->
+            <h1>¡Hola! Soy Natalia Cantó Soriano​</h1> <!--título principal del portfolio-->
             <p>Alumna de 1 DAW IES Estació Ontinyent📚</p>
         </section>
-        <section class="sobreMiSection" id="sobre_mi">
+        <section class="sobreMiSection" id="sobre_mi"> <!--section para sobre mi-->
             <img src="./assets/images/experiencia-programacion-persona-que-trabaja-codigos-computadora-scaled.jpg"
-                alt="imagen_cv" class="sobreMiImg"> <br>
+                alt="imagen_cv" class="sobreMiImg"> <br> <!--ruta para la imagen-->
 
             <table>
-                <caption>
+                <caption> <!--título para la tabla-->
                     <h2>Acerca de mi</h2>
                 </caption>
-                <tr>
+                <tr> <!--definimos las filas de las celdas-->
                     <th class="tituloTabla" colspan="5">Curriculum Vitae</th>
+                    <!--el numero del colspan define el número de columnas que ocupa la celda-->
                 </tr>
                 <tr>
                     <th class="apartadosTabla">Sobre mi</th>
@@ -57,15 +59,17 @@
                 <tr>
                     <th class="apartadosTabla">Experiencia laboral</th>
                     <td>Un año trabajando en <em>Salustar Laboratorios</em> como operaria y jefa de máquina</td>
+                    <!--em pone la letra en cursiva-->
                 </tr>
                 <th class="apartadosTabla">Formación Académica</th>
                 <td><strong>Título de Educación Secundaria Obligatoria</strong> - IES Estació 2019<br>
+                    <!--strong pone la letra en negrita-->
                     <strong>Título de Bachillerato de Ciencias Sociales</strong> - IES Estació 2021
                 </td>
                 <tr>
                     <th class="apartadosTabla">Aptitudes</th>
                     <td>
-                        <ul>
+                        <ul> <!--hacemos una lista desordenada para las aptitudes-->
                             <li> Capacidad resolutiva</li>
                             <li> Trabajo en equipo</li>
                             <li> Gestión del tiempo</li>
@@ -75,13 +79,15 @@
                 </tr>
             </table>
         </section>
-        <section id="contacto" class="sectionContacto">
+        <section id="contacto" class="sectionContacto"> <!--creamos la sección para contacto-->
             <div>
                 <h2>Contacto</h2>
                 <form class="contenedorFormulario" action="envío.php" method="post">
-                    <label for="nombre">Nombre</label><br>
+                    <!--creamos el formulario con un metodo de envio post para enviar datos al servidor-->
+                    <label for="nombre">Nombre</label><br> <!--para conseguir una mayor claridad usamos label-->
                     <input class="formInput" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
-                        maxlength="30" required><br>
+                        maxlength="30" required><br> <!--creamos un input de tipo texto que se llame nombre-->
+                    <!--maxlength es máximo de letras--> <!--required es campo obligatorio-->
 
                     <label for="apellidos">Apellidos</label><br>
                     <input class="formInput" type="text" id="apellidos" name="apellidos"
@@ -89,16 +95,16 @@
 
                     <label for="correo">Correo Electrónico</label><br>
                     <input class="formInput" type="email" id="correo" name="correo" placeholder="tucorreo@example.com"
-                        maxlength="30" required><br>
+                        maxlength="30" required><br> <!--creamos un input de tipo email-->
 
                     <label for="telefono">Teléfono</label><br>
                     <input class="formInput" type="tel" id="telefono" name="telefono"
-                        placeholder="Escribe tu teléfono"><br>
+                        placeholder="Escribe tu teléfono"><br> <!--creamos un input de tipo tel-->
 
                     <label for="pais">País</label>
-                    <input class="formInput" list="paises" id="pais" name="pais">
+                    <input class="formInput" list="paises" id="pais" name="pais"> <!--hacemos un input de list-->
 
-                    <datalist id="paises">
+                    <datalist id="paises"> <!--datalist para crear una lista de opciones predefinidas-->
                         <option value="España">
                         <option value="Estados Unidos">
                         <option value="Francia">
@@ -109,10 +115,12 @@
                     <label for="comentarios">Comentarios</label><br>
                     <textarea name="comentarios" id="comentarios" rows="4"
                         cols="40">Escribe tus comentarios aquí...</textarea>
+                    <!--un textarea para crear un cuadro de texto de varias lineas-->
 
-                    <button type="submit">Enviar</button>
-                </form>
+                    <button type="submit">Enviar</button> <!--creamos el botón de envio-->
+                </form> <!--cerramos el formulario-->
                 <div id="contenedorRRSS" style="display: flex; align-items: center; gap: 15px">
+                    <!--un contenedor para todaslas imagenes y rutas de las redes sociales-->
                     <a href="https://instagram.com/nataaliacanto">
                         <img style="width: 40px;" src="./assets/images/instagram-icon.svg">
                     </a>
@@ -129,11 +137,12 @@
             <iframe style="justify-self: end;" width="600" height="450" frameborder="0" scrolling="no" marginheight="0"
                 marginwidth="0"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-74.043,40.7,-73.907,40.8&layer=mapnik"></iframe><br>
+            <!--el iframe para visualizar un mapa -->
         </section>
     </main>
-    <footer>Página creada por Natalia Cantó</footer>
+    <footer>Página creada por Natalia Cantó</footer> <!--footer para el pie de página-->
 
-    <script src="./assets/scripts/modoOscuro.js"></script>
+    <script src="./assets/scripts/modoOscuro.js"></script> <!--ruta para la scripts modoOscuro.js-->
 </body>
 
 </html>
