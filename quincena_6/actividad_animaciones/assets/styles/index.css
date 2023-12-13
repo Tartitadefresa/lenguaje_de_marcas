@@ -1,0 +1,70 @@
+:root {
+    --bg-color: #fff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #222f3e;
+}
+
+
+* {
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p.textoIluminado>span.caracterIluminado {
+    font-size: 80px;
+    font-weight: bold;
+    color: #576574;
+    text-shadow: none;
+    animation: light 1.3s linear infinite;
+}
+
+@keyframes light {
+    0% {
+        color: #576574;
+        text-shadow: none;
+    }
+    80% {
+        color: #6b7075;
+        text-shadow: none;
+    }
+    100% {
+        color: #f1c40f;
+        text-shadow: 0 0 1 rem #d35400, 0 0 7rem #d35400;
+    }
+}
+
+p.textoIluminado>span.caracterIluminado:nth-child(1) {
+    animation-delay: 0s;
+}
+
+p.textoIluminado>span.caracterIluminado:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+p.textoIluminado>span.caracterIluminado:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+p.textoIluminado>span.caracterIluminado:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+p.textoIluminado>span.caracterIluminado:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+p.textoIluminado>span.caracterIluminado:nth-child(6) {
+    animation-delay: 0.5s;
+}
+

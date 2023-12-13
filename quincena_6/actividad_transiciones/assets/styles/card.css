@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
 
+:root {
+    --bg-color: antiquewhite;
+    --bg-color-card: white;
+    --text-color: black;
+}
+
+[data-theme="dark"] {
+    --bg-color: #222f3e;
+    --bg-color-card: black;
+    --text-color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: var(--bg-color);
 }
 
 .card {
@@ -15,7 +32,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 300px;
-    background-color: white;
+    background-color: var(--bg-color-card);
     border-radius: 5px;
     border: 5px solid tan;
     padding-top: 10px;
@@ -29,6 +46,7 @@ main {
     height: 0px;
     overflow: hidden;
     transition: height 0.3s linear;
+    color: var(--text-color);
 }
 
 .card:hover .card_image {
