@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+    <style>
+        #miTabla {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #miTabla td,
+        #miTabla th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #miTabla tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #miTabla tr:hover {
+            background-color: #ddd;
+        }
+
+        #miTabla th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./scripts/index.js"></script>
+    <div>
+        <label for="valorColumna1">Nombre:</label>
+        <input type="text" id="valorColumna1">
+
+        <label for="valorColumna2">Apellidos:</label>
+        <input type="text" id="valorColumna2">
+
+        <button onclick="agregarPersona()">Agregar Persona</button>
+    </div>
+
+    <h1>Listado de personas</h1>
+    <table id="miTabla" style>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de la tabla se agregarán dinámicamente aquí -->
+        </tbody>
+    </table>
+
+</body>
+
+</html>

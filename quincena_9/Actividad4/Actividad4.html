@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+    <style>
+        .seccion-oculta {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./scripts/index.js"></script>
+    <h1>Contenidos</h1>
+    <ul>
+        <li><a href="#seccion1" onclick="toggleSeccion('seccion1')">Mostrar seccion1</a></li>
+        <li><a href="#seccion2" onclick="toggleSeccion('seccion2')">Mostrar seccion2</a></li>
+        <li><a href="#seccion3" onclick="toggleSeccion('seccion3')">Mostrar seccion3</a></li>
+    </ul>
+
+    <section id="seccion1" class="seccion-oculta">
+        <h2>Sección 1</h2>
+        <p>Contenido de la sección 1...</p>
+    </section>
+
+    <section id="seccion2" class="seccion-oculta">
+        <h2>Sección 2</h2>
+        <p>Contenido de la sección 2...</p>
+    </section>
+
+    <section id="seccion3" class="seccion-oculta">
+        <h2>Sección 3</h2>
+        <p>Contenido de la sección 3...</p>
+    </section>
+
+</body>
+
+</html>
