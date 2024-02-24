@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <form id="taskForm">
+            <div id="newTaskContainer">
+                <input type="text" name="taskInput" id="taskInput" placeholder="Introduce una nueva tarea..." required>
+                <label for="importantTask">Importante:
+                    <input type="checkbox" id="importantTask" name="importantTask">
+                </label>
+            </div>
+            <button id="agregarTareaBtn">Agregar</button>
+        </form>
+        <ul id="taskList"></ul>
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 5px;">
+            <button id="clearBtn">Marcar todas como completadas</button>
+            <button id="deleteBtn">Borrar todas las tareas</button>
+        </div>
+    </div>
+    <script src="./assets/js/index.js" type="module"></script>
+</body>
+
+</html>
