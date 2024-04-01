@@ -1,0 +1,22 @@
+.mouseExample {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+img {
+    border: 1px solid black;
+}
+
+#mousePositionBox {
+    border: 1px solid black;
+    flex: 1;
+    padding: 1rem;
+}
+
+#mousePosition {
+    text-align: center;
+    font-size: 3rem;
+    color: brown;
+    font-weight: bold;
+}
