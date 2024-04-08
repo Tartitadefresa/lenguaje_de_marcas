@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;
+}
+
+.galleryContainer {
+    text-align: center;
+    padding: 10px;
+}
+
+.formContainer {
+    padding: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 500px;
+    overflow: auto;
+}
+
+.person {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+}
+
+.person img {
+    width: 100%;
+    border-radius: 5px;
+}
