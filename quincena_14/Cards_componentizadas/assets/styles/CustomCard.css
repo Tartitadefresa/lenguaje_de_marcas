@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+figure {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 280px;
+    max-width: 380px;
+    min-height: 242px;
+    width: 100%;
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+}
+
+figure * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure>img {
+    width: 50%;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    position: relative;
+    left: -15%;
+    z-index: 1;
+}
+
+figure figcaption {
+    padding: 20px 30px 20px 20px;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+
+figure figcaption h2,
+figure figcaption p {
+    margin: 0;
+    text-align: right;
+    padding: 10px 0;
+    width: 100%;
+}
+
+figure figcaption h2 {
+    font-size: 1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+figure figcaption h2 span {
+    font-weight: 800;
+}
+
+figure figcaption p {
+    font-size: 0.7em;
+    opacity: 0.8;
+}
+
+figure figcaption .icons {
+    width: 100%;
+    text-align: right;
+}
+
+figure figcaption .icons i {
+    font-size: 20px;
+    padding: 5px;
+    top: 50%;
+    color: #000000;
+}
+
+figure figcaption a {
+    opacity: 0.3;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure figcaption a:hover {
+    opacity: 0.8;
+}
+
+figure .position {
+    width: 100%;
+    text-align: right;
+    padding: 15px 30px;
+    font-size: 0.9em;
+    opacity: 1;
+    font-style: italic;
+    color: #ffffff;
+    background: #000000;
+}
+
+figure.blue .position {
+    background: #20638f;
+}
+
+figure.red .position {
+    background: #962d22;
+}
+
+figure.yellow .position {
+    background: #bf6516;
+}
+
+figure.green .position {
+    background: #1e8449;
+}
+
+figure:hover>img,
+figure.hover>img {
+    left: -12%;
+}
