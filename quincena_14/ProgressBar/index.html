@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <script src="./assets/js/ProgressBar.js"></script>
+</head>
+
+<body>
+    <progress-bar progress="50" color="green"></progress-bar>
+
+    <script>
+        const progressBar = document.querySelector('progress-bar');
+        setTimeout(() => {progressBar.progress = 75;
+        }, 2000);
+
+        setTimeout(() => {
+            progressBar.progress = 100;
+        }, 4000);
+    </script>
+</body>
+
+</html>
