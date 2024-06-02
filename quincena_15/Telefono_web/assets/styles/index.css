@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#myInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  width: 20px;
+  margin-left: -30px;
+}
+
+.contactsList {
+  margin-top: 10px;
+}
+
+.contact {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.contact-phone {
+  font-size: 12px;
+}
+
+.contact img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-item div {
+  display: flex;
+  flex-direction: column;
+}

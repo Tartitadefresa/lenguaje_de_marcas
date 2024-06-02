@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listín Telefónico</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>LISTADO DE CONTACTOS</h1>
+        <div id="searchContainer" class="search-container">
+            <input type="text" id="search" placeholder="Buscar..">
+            <span id="searchButton">
+              <img src="./assets/images/search-alt-2-svgrepo-com.svg" alt="Search" class="search-icon">
+            </span>
+        </div>
+
+        <div class="contactsList" id="contactsList">
+            <div class="contact">
+                <img src="./assets/images/profile-user-svgrepo-com.svg" alt="Profile" class="contact-image" >
+                <div>
+                  <div class="contact-name">Juan Pérez</div>
+                  <div class="contact-phone">555-1234</div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="./assets/images/profile-user-svgrepo-com.svg" alt="Profile" class="contact-image" id="searchButton">
+                <div>
+                  <div class="contact-name">María López</div>
+                  <div class="contact-phone">555-5678</div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <img src="./assets/images/profile-user-svgrepo-com.svg" alt="Profile" class="contact-image" id="searchButton">
+                <div>
+                  <div class="contact-name">Carlos Rodríguez</div>
+                  <div class="contact-phone">555-9012</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./assets/js/index.js"></script>
+
+</body>
+
+</html>

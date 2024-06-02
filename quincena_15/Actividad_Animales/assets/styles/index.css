@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+div.formularioAnimales {
+    /* max-width: 400px; */
+    padding: 5px;
+}
+
+div.tiposAnimal {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+li button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    float: right;
+}
+
+li button:hover {
+    background-color: #bd2130;
+}
+
+div.botonera {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* Para posicionar el logo */
+    overflow: hidden;
+    /* Para ocultar parte del logo que salga de la tarjeta */
+    transition: box-shadow 0.3s;
+    /* Transición suave para el efecto de sombra */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Cambiar la sombra al pasar el cursor */
+}
+
+.animal-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.animal-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.animal-info {
+    margin-bottom: 5px;
+}
+
+#animal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}

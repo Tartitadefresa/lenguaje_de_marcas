@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+
+<body>
+    <div class="formularioAnimales">
+        <fieldset>
+            <legend>Formulario inserción animales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            <br />
+
+            <label>Tipo:</label>
+            <div class="tiposAnimal">
+                <label>Perro
+                    <input type="radio" id="perro" name="tipoAnimal" value="Perro">
+                </label>
+                <label>Gato
+                    <input type="radio" id="gato" name="tipoAnimal" value="Gato">
+                </label>
+                <label>Ave
+                    <input type="radio" id="ave" name="tipoAnimal" value="Ave">
+                </label>
+            </div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+
+            <label for="color">Color:</label>
+            <select id="color">
+                <option value="marron">Marrón</option>
+                <option value="negro">Negro</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br />
+
+            <div di="botonera">
+                <button type="submit">Agregar Animal</button>
+                <button id="eliminarTodosBtn">Eliminar todos los Animales</button>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <h1>Listado de animales</h1>
+        <div id="animal-list">
+            <!-- CARD DE EJEMPLO. TODOS LOS ANIMALES AÑADIDOS AL LISTADO TIENEN QUE TENER UNA CARD IGUAL A ESTA PERO MODIFICANDO LOS VALORES -->
+            <div class="card">
+                <!-- Dependiendo del tipo de animal el emoji debe ser diferente -->
+                <div class="animal-logo">🐾</div>
+                <div class="animal-name">Nombre del Animal:</div>
+                <div class="animal-info">Tipo: Perro</div>
+                <div class="animal-info">Edad: 3 años</div>
+                <div class="animal-info">Color: Marrón</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
